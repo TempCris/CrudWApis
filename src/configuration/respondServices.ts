@@ -1,7 +1,7 @@
 // --------------------------------------IMPORTS------------------------------------
 // ---Dependencies
 import { Response } from 'express';
-import Joi from 'joi';
+import Joi from 'Joi';
 // ---Other
 import { Callback, CallbackResponse } from '#Config/customTypes';
 

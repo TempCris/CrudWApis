@@ -8,6 +8,8 @@ import cors from 'cors';
 import startLogs from '#Config/startLogs';
 // ---Routes
 import logearse from '#Routes/loginMock';
+//ruta propia
+import CrudWApis from '#Routes/CrudwApis';
 // -----------------------------------CONFIG-------------------------------
 
 const app = express();
@@ -21,6 +23,8 @@ app.use(helmet()); // For security
 app.use(cors()); // For security
 // -----------------------------------ROUTES-------------------------------
 app.use('/api/loginMock/', logearse);
+//La ruta de mi api 
+app.use('/api/CrudWApis/', CrudWApis);
 // -----------------------------------SSL-------------------------------
 const http = require('http');
 

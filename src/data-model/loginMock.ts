@@ -1,6 +1,6 @@
 // --------------------------------------IMPORTS------------------------------------
 // Dependencies
-import Joi from 'joi';
+import Joi from 'Joi';
 // --------------------------MODEL DATA JOI VALIDATORS-----------------------
 export function validateLoginData(data: unknown): Joi.ValidationResult {
   const schema = Joi.object({
